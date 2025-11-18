@@ -2,12 +2,11 @@
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import type { WithoutChildren } from "$lib/utils.js";
 	import type { ComponentProps } from "svelte";
-	import type { Icon } from "@tabler/icons-svelte";
 
 	let {
 		items,
 		...restProps
-	}: { items: { title: string; url: string; icon: Icon }[] } & WithoutChildren<
+	}: { items: { title: string; url: string; icon: any }[] } & WithoutChildren<
 		ComponentProps<typeof Sidebar.Group>
 	> = $props();
 </script>

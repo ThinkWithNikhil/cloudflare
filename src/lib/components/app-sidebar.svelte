@@ -4,7 +4,7 @@
 	import AudioWaveformIcon from "@lucide/svelte/icons/audio-waveform";
 	import HouseIcon from "@lucide/svelte/icons/house";
 	import MessageSquareDotIcon from "@lucide/svelte/icons/message-square-dot";
-	import BotIcon from "@lucide/svelte/icons/bot";
+	import SettingsIcon from "@lucide/svelte/icons/settings";
 	import ChartPieIcon from "@lucide/svelte/icons/chart-pie";
 	import CommandIcon from "@lucide/svelte/icons/command";
 	import FrameIcon from "@lucide/svelte/icons/frame";
@@ -12,6 +12,8 @@
 	import MapIcon from "@lucide/svelte/icons/map";
 	import ClipBoardClockIcon from "@lucide/svelte/icons/clipboard-clock";
 	import HistoryIcon from "@lucide/svelte/icons/history";
+	import GiftIcon from "@lucide/svelte/icons/gift";
+	import HelpIcon from "@lucide/svelte/icons/help-circle";
 
 	// This is sample data.
 	const data = {
@@ -90,6 +92,23 @@
 				icon: MapIcon,
 			},
 		],
+		navSecondary: [
+			{
+				title: "Settings",
+				url: "#",
+				icon: SettingsIcon,
+			},
+			{
+				title: "What's New",
+				url: "#",
+				icon: GiftIcon,
+			},
+			{
+				title: "Get Help",
+				url: "#",
+				icon: HelpIcon,
+			},
+		],
 	};
 </script>
 
@@ -97,6 +116,7 @@
 	import NavMain from "./nav-main.svelte";
 	import NavPins from "./nav-pins.svelte";
 	import NavUser from "./nav-user.svelte";
+	import NavSecondary from './nav-secondary.svelte';
 	import TeamSwitcher from "./team-switcher.svelte";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import type { ComponentProps } from "svelte";
@@ -127,7 +147,7 @@
 	<Sidebar.Content>
 		<NavMain items={data.navMain} />
 		<NavPins pins={data.pins} />
-		
+		<NavSecondary items={data.navSecondary} class="mt-auto" />
 	</Sidebar.Content>
 	<Sidebar.Footer>
 		<NavUser user={data.user} />
