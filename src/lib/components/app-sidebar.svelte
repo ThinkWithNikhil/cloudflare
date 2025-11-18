@@ -10,7 +10,7 @@
 	import FrameIcon from "@lucide/svelte/icons/frame";
 	import GalleryVerticalEndIcon from "@lucide/svelte/icons/gallery-vertical-end";
 	import MapIcon from "@lucide/svelte/icons/map";
-	import Settings2Icon from "@lucide/svelte/icons/settings-2";
+	import ClipBoardClockIcon from "@lucide/svelte/icons/clipboard-clock";
 	import HistoryIcon from "@lucide/svelte/icons/history";
 
 	// This is sample data.
@@ -49,15 +49,15 @@
 				icon: HistoryIcon,
 				items: [
 					{
-						title: "Genesis",
+						title: "Workers & Pages",
 						url: "#",
 					},
 					{
-						title: "Explorer",
+						title: "Containers",
 						url: "#",
 					},
 					{
-						title: "Quantum",
+						title: "Hyperdrive",
 						url: "#",
 					},
 				],
@@ -68,27 +68,9 @@
 				icon: MessageSquareDotIcon,
 			},
 			{
-				title: "Settings",
+				title: "Activity",
 				url: "#",
-				icon: Settings2Icon,
-				items: [
-					{
-						title: "General",
-						url: "#",
-					},
-					{
-						title: "Team",
-						url: "#",
-					},
-					{
-						title: "Billing",
-						url: "#",
-					},
-					{
-						title: "Limits",
-						url: "#",
-					},
-				],
+				icon: ClipBoardClockIcon,
 			},
 		],
 		pins: [
