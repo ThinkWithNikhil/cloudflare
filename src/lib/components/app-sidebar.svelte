@@ -3,7 +3,7 @@
 	import Nikhil from '$lib/assets/avatars/nikhil.png';
 	import AudioWaveformIcon from "@lucide/svelte/icons/audio-waveform";
 	import HouseIcon from "@lucide/svelte/icons/house";
-	import BookOpenIcon from "@lucide/svelte/icons/book-open";
+	import MessageSquareDotIcon from "@lucide/svelte/icons/message-square-dot";
 	import BotIcon from "@lucide/svelte/icons/bot";
 	import ChartPieIcon from "@lucide/svelte/icons/chart-pie";
 	import CommandIcon from "@lucide/svelte/icons/command";
@@ -63,27 +63,9 @@
 				],
 			},
 			{
-				title: "Documentation",
+				title: "Notifications",
 				url: "#",
-				icon: BookOpenIcon,
-				items: [
-					{
-						title: "Introduction",
-						url: "#",
-					},
-					{
-						title: "Get Started",
-						url: "#",
-					},
-					{
-						title: "Tutorials",
-						url: "#",
-					},
-					{
-						title: "Changelog",
-						url: "#",
-					},
-				],
+				icon: MessageSquareDotIcon,
 			},
 			{
 				title: "Settings",
