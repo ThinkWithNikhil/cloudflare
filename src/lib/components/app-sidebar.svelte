@@ -39,7 +39,43 @@
 				plan: "Free",
 			},
 		],
-		navMain: [
+		navAccount: [
+			{
+				title: "Home",
+				url: "#",
+				icon: HouseIcon,
+			},
+			{
+				title: "Notifications",
+				url: "#",
+				icon: MessageSquareDotIcon,
+			},
+			{
+				title: "Activity",
+				url: "#",
+				icon: ClipBoardClockIcon,
+			},
+			{
+				title: "Recents",
+				url: "#",
+				icon: HistoryIcon,
+				items: [
+					{
+						title: "Workers & Pages",
+						url: "#",
+					},
+					{
+						title: "Containers",
+						url: "#",
+					},
+					{
+						title: "Hyperdrive",
+						url: "#",
+					},
+				],
+			},
+		],
+		navFeatures: [
 			{
 				title: "Home",
 				url: "#",
@@ -145,8 +181,9 @@
 		<TeamSwitcher teams={data.teams} />
 	</Sidebar.Header>
 	<Sidebar.Content>
-		<NavMain items={data.navMain} />
+		<NavMain items={data.navAccount} />
 		<NavPins pins={data.pins} />
+		<NavMain groupLabel='Features' items={data.navFeatures} />
 		<NavSecondary items={data.navSecondary} class="mt-auto" />
 	</Sidebar.Content>
 	<Sidebar.Footer>
