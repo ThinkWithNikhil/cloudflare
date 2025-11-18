@@ -46,6 +46,16 @@
 				icon: HouseIcon,
 			},
 			{
+				title: "Notifications",
+				url: "#",
+				icon: MessageSquareDotIcon,
+			},
+			{
+				title: "Activity",
+				url: "#",
+				icon: ClipBoardClockIcon,
+			},
+			{
 				title: "Recents",
 				url: "#",
 				icon: HistoryIcon,
@@ -63,16 +73,6 @@
 						url: "#",
 					},
 				],
-			},
-			{
-				title: "Notifications",
-				url: "#",
-				icon: MessageSquareDotIcon,
-			},
-			{
-				title: "Activity",
-				url: "#",
-				icon: ClipBoardClockIcon,
 			},
 		],
 		pins: [
