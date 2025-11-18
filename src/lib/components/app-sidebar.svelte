@@ -75,7 +75,7 @@
 				],
 			},
 		],
-		navFeatures: [
+		navProducts: [
 			{
 				title: "Home",
 				url: "#",
@@ -183,7 +183,7 @@
 	<Sidebar.Content>
 		<NavMain items={data.navAccount} />
 		<NavPins pins={data.pins} />
-		<NavMain groupLabel='Features' items={data.navFeatures} />
+		<NavMain groupLabel='Products' items={data.navProducts} />
 		<NavSecondary items={data.navSecondary} class="mt-auto" />
 	</Sidebar.Content>
 	<Sidebar.Footer>
