@@ -4,7 +4,6 @@
 	import AudioWaveformIcon from "@lucide/svelte/icons/audio-waveform";
 	import HouseIcon from "@lucide/svelte/icons/house";
 	import MessageSquareDotIcon from "@lucide/svelte/icons/message-square-dot";
-	import SettingsIcon from "@lucide/svelte/icons/settings";
 	import ChartPieIcon from "@lucide/svelte/icons/chart-pie";
 	import CommandIcon from "@lucide/svelte/icons/command";
 	import FrameIcon from "@lucide/svelte/icons/frame";
@@ -14,6 +13,15 @@
 	import HistoryIcon from "@lucide/svelte/icons/history";
 	import GiftIcon from "@lucide/svelte/icons/gift";
 	import HelpIcon from "@lucide/svelte/icons/help-circle";
+	import ComputeIcon from "@lucide/svelte/icons/cpu";
+	import StorageIcon from "@lucide/svelte/icons/database";
+	import MediaIcon from "@lucide/svelte/icons/video";
+	import DomainIcon from "@lucide/svelte/icons/globe";
+	import SuperShieldIcon from "@lucide/svelte/icons/shield-check";
+	import ShieldIcon from "@lucide/svelte/icons/shield-half";
+	import ThunderIcon from "@lucide/svelte/icons/zap";
+	import NetworkIcon from "@lucide/svelte/icons/waypoints";
+	import AnalyticsIcon from "@lucide/svelte/icons/chart-bar";
 
 	// This is sample data.
 	const data = {
@@ -51,11 +59,6 @@
 				icon: MessageSquareDotIcon,
 			},
 			{
-				title: "Activity",
-				url: "#",
-				icon: ClipBoardClockIcon,
-			},
-			{
 				title: "Recents",
 				url: "#",
 				icon: HistoryIcon,
@@ -74,30 +77,42 @@
 					},
 				],
 			},
+			{
+				title: "Analytics & Logs",
+				url: "#",
+				icon: ClipBoardClockIcon,
+				items: [
+					{
+						title: "Account Analytics",
+						url: "#",
+					},
+					{
+						title: "Traces",
+						url: "#",
+					},
+					{
+						title: "Activity Logs",
+						url: "#",
+					},
+				],
+			},
 		],
 		navProducts: [
 			{
-				title: "Home",
+				title: "Compute & AI",
 				url: "#",
-				icon: HouseIcon,
-			},
-			{
-				title: "Notifications",
-				url: "#",
-				icon: MessageSquareDotIcon,
-			},
-			{
-				title: "Activity",
-				url: "#",
-				icon: ClipBoardClockIcon,
-			},
-			{
-				title: "Recents",
-				url: "#",
-				icon: HistoryIcon,
+				icon: ComputeIcon,
 				items: [
 					{
 						title: "Workers & Pages",
+						url: "#",
+					},
+					{
+						title: "Observability",
+						url: "#",
+					},
+					{
+						title: "Workers AI",
 						url: "#",
 					},
 					{
@@ -105,7 +120,159 @@
 						url: "#",
 					},
 					{
+						title: "Durable Objects",
+						url: "#",
+					},
+					{
+						title: "Workflows",
+						url: "#",
+					},
+					{
+						title: "Queues",
+						url: "#",
+					},
+					{
+						title: "Browser Rendering",
+						url: "#",
+					},
+				],
+			},
+			{
+				title: "Web Analytics",
+				url: "#",
+				icon: AnalyticsIcon,
+			},
+			{
+				title: "Storage & Databases",
+				url: "#",
+				icon: StorageIcon,
+				items: [
+					{
+						title: "R2 Object Storage ",
+						url: "#",
+					},
+					{
+						title: "D1 SQL Database ",
+						url: "#",
+					},
+					{
+						title: "Workers KV",
+						url: "#",
+					},
+					{
+						title: "Vectorize",
+						url: "#",
+					},
+					{
 						title: "Hyperdrive",
+						url: "#",
+					},
+					{
+						title: "Secrets Store",
+						url: "#",
+					}
+				],
+			},
+			{
+				title: "Media & Streaming",
+				url: "#",
+				icon: MediaIcon,
+				items: [
+					{
+						title: "Stream",
+						url: "#",
+					},
+					{
+						title: "Images",
+						url: "#",
+					},
+					{
+						title: "Realtime",
+						url: "#",
+					},
+				],
+			},
+			{
+				title: "Domains",
+				url: "#",
+				icon: DomainIcon,
+				items: [
+					{
+						title: "Register",
+						url: "#",
+					},
+					{
+						title: "Transfer",
+						url: "#",
+					},
+					{
+						title: "Manage",
+						url: "#",
+					},
+				],
+			},
+			{
+				title: "Application Security",
+				url: "#",
+				icon: SuperShieldIcon,
+				items: [
+					{
+						title: "Security Insights",
+						url: "#",
+					},
+					{
+						title: "WAF",
+						url: "#",
+					},
+					{
+						title: "Investigate",
+						url: "#",
+					},
+					{
+						title: "Infrastructure",
+						url: "#",
+					},
+					{
+						title: "Turnstile",
+						url: "#",
+					},
+				],
+			},
+			{
+				title: "Zero Trust",
+				url: "#",
+				icon: ShieldIcon,
+			},
+			{
+				title: "Networking",
+				url: "#",
+				icon: NetworkIcon,
+				items: [
+					{
+						title: "Analytics",
+						url: "#",
+					},
+					{
+						title: "IP Addresses",
+						url: "#",
+					},
+				],
+			},
+			{
+				title: "Delivery & Performance",
+				url: "#",
+				icon: ThunderIcon,
+				items: [
+					{
+						title: "Bulk Redirects",
+						url: "#",
+					},
+					{
+						title: "Load Balancing",
+						url: "#",
+					},
+					{
+						title: "Web Tag Manager",
 						url: "#",
 					},
 				],
@@ -130,11 +297,6 @@
 		],
 		navSecondary: [
 			{
-				title: "Settings",
-				url: "#",
-				icon: SettingsIcon,
-			},
-			{
 				title: "What's New",
 				url: "#",
 				icon: GiftIcon,
@@ -156,6 +318,7 @@
 	import TeamSwitcher from "./team-switcher.svelte";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import type { ComponentProps } from "svelte";
+	import Shield from '@tabler/icons-svelte/icons/shield';
 
 	let {
 		ref = $bindable(null),
@@ -184,9 +347,9 @@
 		<NavMain items={data.navAccount} />
 		<NavPins pins={data.pins} />
 		<NavMain groupLabel='Products' items={data.navProducts} />
-		<NavSecondary items={data.navSecondary} class="mt-auto" />
 	</Sidebar.Content>
 	<Sidebar.Footer>
+		<NavSecondary items={data.navSecondary} class="mt-auto" />
 		<NavUser user={data.user} />
 	</Sidebar.Footer>
 	<Sidebar.Rail />
