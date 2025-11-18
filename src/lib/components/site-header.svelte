@@ -1,0 +1,35 @@
+<script lang="ts">
+	import { Button } from "$lib/components/ui/button/index.js";
+	import { Separator } from "$lib/components/ui/separator/index.js";
+	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+</script>
+
+<header
+	class="h-(--header-height) group-has-data-[collapsible=icon]/sidebar-wrapper:h-(--header-height) flex shrink-0 items-center gap-2 border-b transition-[width,height] ease-linear"
+>
+	<div class="flex w-full items-center gap-1 px-4 lg:gap-2 lg:px-6">
+		<Sidebar.Trigger class="-ml-1" />
+		<Separator orientation="vertical" class="mx-2 data-[orientation=vertical]:h-4" />
+		<div class="flex flex-col">
+			<h1 class="text-base font-medium">Account Dashboard</h1>
+		</div>
+		<div class="ml-auto flex items-center gap-2">
+			<Button
+				href="#invite"
+				variant="default"
+				size="sm"
+				class="hidden sm:inline-flex"
+			>
+				Invite team
+			</Button>
+			<Button
+				href="#docs"
+				variant="ghost"
+				size="sm"
+				class="dark:text-foreground"
+			>
+				Docs
+			</Button>
+		</div>
+	</div>
+</header>
