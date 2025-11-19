@@ -334,7 +334,7 @@
 			<Sidebar.MenuButton class="data-[slot=sidebar-menu-button]:p-1.5!">
 			{#snippet child({ props })}
 				<a href="##" {...props}>
-				<img src={CloudFlare} alt="CloudFlare Logo" class="max-w-full h-6 rounded-md" />
+				<img src={CloudFlare} alt="CloudFlare Logo" class="max-w-6 h-auto" />
 				<span class="font-sans ml-2 text-xs font-semibold tracking-wider">CLOUDFLARE</span>
 				</a>
 			{/snippet}
