@@ -3,6 +3,9 @@
 	import * as Breadcrumb from "$lib/components/ui/breadcrumb/index.js";
 	import { Separator } from "$lib/components/ui/separator/index.js";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+	import * as DropdownMenu from "$lib/components/ui/dropdown-menu/index.js";
+	import SettingsIcon from "@lucide/svelte/icons/settings";
+	import Button from "$lib/components/ui/button/button.svelte";
 </script>
 
 <Sidebar.Provider>
@@ -21,6 +24,27 @@
 						</Breadcrumb.Item>
 					</Breadcrumb.List>
 				</Breadcrumb.Root>
+			</div>
+			<div class="ml-auto flex items-center gap-2">
+				<DropdownMenu.Root>
+					<DropdownMenu.Trigger >
+						<Button variant="outline" size="sm" class="mr-2">
+							<SettingsIcon />
+							Manage Account
+						</Button>
+					</DropdownMenu.Trigger>
+					<DropdownMenu.Content align="end" sideOffset={8} class="mr-2">
+						<DropdownMenu.Group>
+							<DropdownMenu.Item>Settings</DropdownMenu.Item>
+							<DropdownMenu.Item>Billing</DropdownMenu.Item>
+							<DropdownMenu.Item>Team</DropdownMenu.Item>
+							<DropdownMenu.Item>API Tokens</DropdownMenu.Item>
+							<DropdownMenu.Item>Blocked Content</DropdownMenu.Item>
+							<DropdownMenu.Item>Abuse Reports</DropdownMenu.Item>
+							<DropdownMenu.Item>Carbon Impact Report</DropdownMenu.Item>
+						</DropdownMenu.Group>
+					</DropdownMenu.Content>
+				</DropdownMenu.Root>
 			</div>
 		</header>
 		<div class="flex flex-1 flex-col gap-4 p-4 pt-0">

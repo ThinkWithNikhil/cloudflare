@@ -318,7 +318,7 @@
 	import TeamSwitcher from "./team-switcher.svelte";
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
 	import type { ComponentProps } from "svelte";
-	import Shield from '@tabler/icons-svelte/icons/shield';
+	import Separator from './ui/separator/separator.svelte';
 
 	let {
 		ref = $bindable(null),
@@ -348,8 +348,9 @@
 		<NavPins pins={data.pins} />
 		<NavMain groupLabel='Products' items={data.navProducts} />
 	</Sidebar.Content>
+	<Separator />
 	<Sidebar.Footer>
-		<NavSecondary items={data.navSecondary} class="mt-auto" />
+		<NavSecondary items={data.navSecondary}  />
 		<NavUser user={data.user} />
 	</Sidebar.Footer>
 	<Sidebar.Rail />
